@@ -10,61 +10,43 @@
 </head>
 
 <body class="page__body">
-  <header class="header">Шапка</header>
-  <div class="header__container">
-    <div class="header__logo">
-      <img class="header__logo-image" src="images/logo-mobile.png" alt="Cat Energy">
-      <span class="header__logo-text">CAT ENERGY</span>
+  <!-- Блок Header -->
+  <header class="header">
+    <div class="header__container">
+      <a class="header__logo" href="index.html">
+        <img class="header__logo-image" src="images/logo-mobile.png" width="33" height="38" alt="Логотип Cat Energy.">
+        <span class="header__logo-text">CAT ENERGY</span>
+      </a>
+      <button class="header__toggle" type="button">
+        <span class="visually-hidden">Открыть меню.</span>
+      </button>
     </div>
-    <button class="header__toggle" type="button">
-      <span class="header__toggle-line"></span>
-      <span class="header__toggle-line"></span>
-      <span class="header__toggle-line"></span>
-    </button>
-  </div>
   </header>
-
-  <!-- Главное меню -->
-  <nav class="main-nav main-nav--closed">
-    <ul class="main-nav__list">
-      <li class="main-nav__item">
-        <a class="main-nav__link" href="#">ГЛАВНАЯ</a>
-      </li>
-      <li class="main-nav__item">
-        <a class="main-nav__link" href="#">КАТАЛОГ ПРОДУКЦИИ</a>
-      </li>
-      <li class="main-nav__item">
-        <a class="main-nav__link" href="#">ПОДБОР ПРОГРАММЫ</a>
-      </li>
-    </ul>
-  </nav>
-
-  <!-- Мобильное меню -->
-  <div class="mobile-menu mobile-menu--opened">
-    <!-- Секция Hero в меню -->
-    <section class="mobile-menu__hero">
-      <h2 class="visually-hidden">Рекомендованный продукт</h2>
-      <div class="mobile-menu__hero-container">
-        <div class="mobile-menu__product">
-          <img class="mobile-menu__product-image" src="images/hero-product.png" alt="Cat Energy PRO">
-        </div>
-        <a class="mobile-menu__button button" href="form.html">ПОДОБРАТЬ ПРОГРАММУ</a>
-      </div>
-    </section>
-  </div>
-
-  <!-- Оверлей для закрытия меню -->
-  <div class="mobile-menu__overlay"></div>
 
   <!-- Основное содержимое -->
   <main class="main">
+    <!-- Главное меню -->
+    <nav class="main-nav main-nav--closed">
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">ГЛАВНАЯ</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">КАТАЛОГ ПРОДУКЦИИ</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">ПОДБОР ПРОГРАММЫ</a>
+        </li>
+      </ul>
+    </nav>
+
     <!-- Секция Hero -->
     <section class="hero">
       <div class="hero__container">
         <h1 class="hero__title">Функциональное питание для котов</h1>
         <p class="hero__slogan">ЗАНЯЛСЯ СОБОЙ? ЗАЙМИСЬ КОТОМ!</p>
         <div class="hero__image">
-          <img class="hero__product" src="images/hero-product.png" alt="Cat Energy PRO">
+          <img class="hero__product" src="images/hero-product.png" width="280" height="270" alt="Cat Energy PRO со вкусом курицы.">
         </div>
         <a class="hero__button button" href="#">ПОДОБРАТЬ ПРОГРАММУ</a>
       </div>
@@ -73,12 +55,13 @@
     <!-- Секция программ -->
     <section class="programs">
       <div class="programs__container">
+        <h2 class="visually-hidden">Программы питания</h2>
         <!-- Программа похудения -->
         <article class="program program--slim">
           <div class="program__icon">
-            <img class="program__icon-image" src="images/icon-cat-slim.svg" alt="">
+            <img class="program__icon-image" src="images/icon-cat-slim.svg" width="50" height="50" alt="">
           </div>
-          <h2 class="program__title">ПОХУДЕНИЕ</h2>
+          <h3 class="program__title">ПОХУДЕНИЕ</h3>
           <p class="program__description">
             Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
           </p>
@@ -88,9 +71,9 @@
         <!-- Программа набора массы -->
         <article class="program program--pro">
           <div class="program__icon">
-            <img class="program__icon-image" src="images/icon-cat-pro.svg" alt="">
+            <img class="program__icon-image" src="images/icon-cat-pro.svg" width="50" height="50" alt="">
           </div>
-          <h2 class="program__title">НАБОР МАССЫ</h2>
+          <h3 class="program__title">НАБОР МАССЫ</h3>
           <p class="program__description">
             Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
           </p>
@@ -154,8 +137,8 @@
 
         <div class="example__slider">
           <div class="example__image-container">
-            <img class="example__image example__image--before" src="images/cat-before-mobile.jpg" alt="Кот до">
-            <img class="example__image example__image--after" src="images/cat-after-mobile.jpg" alt="Кот после">
+            <img class="example__image example__image--before" src="images/cat-before-mobile.jpg" width="280" height="256" alt="Кот до похудения.">
+            <img class="example__image example__image--after" src="images/cat-after-mobile.jpg" width="280" height="256" alt="Кот после похудения.">
           </div>
           <div class="example__controls">
             <button class="example__control example__control--before" type="button">БЫЛО</button>
@@ -174,12 +157,13 @@
         <div class="contacts__info">
           <h2 class="contacts__title">ПРИГЛАШАЕМ К СОТРУДНИЧЕСТВУ ДИЛЕРОВ!</h2>
           <address class="contacts__address">
-            ул. Большая Конюшенная, д. 19/8<br>
+            ул. Большая Конюшенная, д. 19/8
+
             Санкт-Петербург
           </address>
         </div>
         <div class="contacts__map">
-          <img class="contacts__map-image" src="images/map-mobile.jpg" alt="Карта с адресом магазина">
+          <img class="contacts__map-image" src="images/map-mobile.jpg" width="320" height="362" alt="Карта с адресом магазина.">
         </div>
       </div>
     </section>
@@ -188,26 +172,31 @@
   <!-- Подвал сайта -->
   <footer class="footer">
     <div class="footer__container">
-      <div class="footer__logo">
+      <a class="footer__logo" href="index.html">
         <span class="footer__logo-text">CAT ENERGY</span>
-      </div>
+      </a>
       <div class="footer__social">
         <a class="footer__social-link" href="#">
-          <img class="footer__social-icon" src="images/icon-vk.svg" alt="ВКонтакте">
+          <span class="visually-hidden">ВКонтакте</span>
+          <img class="footer__social-icon" src="images/icon-vk.svg" width="28" height="22" alt="">
         </a>
         <a class="footer__social-link" href="#">
-          <img class="footer__social-icon" src="images/icon-youtube.svg" alt="YouTube">
+          <span class="visually-hidden">YouTube</span>
+          <img class="footer__social-icon" src="images/icon-youtube.svg" width="28" height="22" alt="">
         </a>
         <a class="footer__social-link" href="#">
-          <img class="footer__social-icon" src="images/icon-telegram.svg" alt="Telegram">
+          <span class="visually-hidden">Telegram</span>
+          <img class="footer__social-icon" src="images/icon-telegram.svg" width="28" height="22" alt="">
         </a>
       </div>
       <div class="footer__copyright">
         <a class="footer__copyright-link" href="#">
           <span class="footer__copyright-text">HTML Academy</span>
-          <img class="footer__copyright-logo" src="images/logo-htmlacademy.svg" alt="HTML Academy">
+          <img class="footer__copyright-logo" src="images/logo-htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy.">
         </a>
       </div>
     </div>
   </footer>
 </body>
+
+</html>
