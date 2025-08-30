@@ -3,10 +3,14 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Cat Energy - Функциональное питание для котов</title>
+  <title>Cat Energy - Каталог продукции</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
-  <script src="scripts/index.js" defer></script>
+  <link rel="icon" href="favicons/cat-inscription@1x.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="favicons/cat-inscription@2x.png" sizes="64x64" type="image/png">
+  <link rel=" icon" href="favicon.ico">
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/apple_180.png">
 </head>
 
 <body class="page__body">
@@ -38,11 +42,20 @@
     <div class="hero__container">
       <h1 class="hero__title">Функциональное питание для котов</h1>
       <p class="hero__slogan">Занялся собой? Займись котом!</p>
-      <img src="#" width="200" height="270" alt="Питание для котов">
+      <picture>
+        <!-- Вариант для десктопов -->
+        <source media="(min-width: 1440px)" srcset="images/cat-food-7@1x.png 1x, images/cat-food-7@2x.png 2x" type="image/png" width="552" height="499">
+
+        <!-- Вариант для планшетов -->
+        <source media="(min-width: 768px)" srcset="images/cat-food-7@1x.png 1x, images/cat-food-7@2x.png 2x" type="image/png" width="709" height="609">
+
+        <!-- Изображение по умолчанию (для мобильных) и для старых браузеров -->
+        <img src="images/cat-food-7@1x.png" srcset="images/cat-food-7@2x.png 2x" alt="Описание изображения, например: Упаковка корма Cat Energy" width="280" height="270">
+      </picture>
     </div>
   </section>
 
-  <section class="main-page__how-it-works">
+  <section class=" main-page__how-it-works">
     <div class="how-it-works__container">
       <h2 class="how-it-works__title">Как это работает</h2>
       <ul class="how-it-works__list">
@@ -90,14 +103,20 @@
       <div class="example__slider">
         <div class="example__before">
           <picture>
-            <source media="(min-width: 768px)" srcset="images/index/cat_fat_tablet@1x.png 1x, images/index/cat_fat_tablet@2x.png 2x" type="image/png" width="560" height="512">
-            <img src="images/index/cat_fat_mobile@1x.png" srcset="images/index/cat_fat_mobile@2x.png 2x" width="280" height="256" alt="Толстый кот до программы.">
+            <!-- Вариант для планшетов и десктопов -->
+            <source media="(min-width: 768px)" srcset="images/cat-big@1x.png 1x, images/cat-big@2x.png 2x" type="image/png" width="560" height="512">
+
+            <!-- Изображение по умолчанию (для мобильных) -->
+            <img src="images/cat-big@1x.png" srcset="images/cat-big@2x.png 2x" width="280" height="256" alt="Толстый кот до программы.">
           </picture>
         </div>
         <div class="example__after">
           <picture>
-            <source media="(min-width: 768px)" srcset="images/index/cat_skinny_tablet@1x.png 1x, images/index/cat_skinny_tablet@2x.png 2x" type="image/png" width="560" height="512">
-            <img src="images/index/cat_skinny_mobile@1x.png" srcset="images/index/cat_skinny_mobile@2x.png 2x" width="280" height="256" alt="Худой кот после программы.">
+            <!-- Вариант для планшетов и десктопов -->
+            <source media="(min-width: 768px)" srcset="images/cat-small@1x.png 1x, images/cat-small@2x.png 2x" type="image/png" width="560" height="512">
+
+            <!-- Изображение по умолчанию (для мобильных) -->
+            <img src="images/cat-small@1x.png" srcset="images/cat-small@2x.png 2x" width="280" height="256" alt="Худой кот после программы.">
           </picture>
         </div>
         <div class="example__divider">
@@ -120,7 +139,7 @@
 
     <div class="main-footer__wrapper">
       <a class="main-footer__link" href="index.html">
-        <img class="main-footer__logo" src="#" width="128" height="24" alt="Логотип сайта Cat Energy.">
+        <img class="main-footer__logo" src="images/Logo-mobile@1x.png" srcset="images/Logo-mobile@2x.png 2x" width="128" height="24" alt="Логотип сайта Cat Energy.">
       </a>
       <ul class="main-footer__social social-list">
         <li class="social-list__item">
