@@ -1,0 +1,151 @@
+.cooperation {
+  background-color: $background-color-main;
+
+  &--grey {
+    background-color: $background-color-secondary;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+
+.cooperation__wrapper {
+  @media (min-width: $desktop-width) {
+    grid-row: 1 / -1;
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    grid-template-rows: 95px min-content;
+  }
+}
+
+.cooperation__text-wrapper {
+  display: flex;
+  justify-content: space-between;
+  min-height: 60px;
+  padding: 26px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / -1;
+    grid-row: 2 / -1;
+    z-index: 1;
+    width: 407px;
+    padding: 60px 78px 60px 80px;
+    background-color: $background-color-main;
+  }
+}
+
+.cooperation__header {
+  display: block;
+  width: 140px;
+  margin: 0;
+  font-family: $main-header;
+  font-weight: 400;
+  font-size: 16px;
+  color: $text-color-threety;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 163px;
+    padding-top: 2px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+.cooperation__address {
+  display: block;
+  width: 140px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: $text-color-main;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 157px;
+    font-size: 16px;
+    text-align: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
+  }
+}
+
+.cooperation__map {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  background-color: $background-color-eleventy;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+  }
+}
+
+.cooperation__map-insert {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  display: block;
+  width: 100%;
+  background: transparent;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    min-height: 400px;
+    height: 100%;
+  }
+}
+
+.cooperation__map-background {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  display: block;
+  width: 100%;
+
+  @media (min-width: $desktop-width) {
+    height: 100%;
+  }
+}
+
+.cooperation__map-picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: image-set(url("../../images/map_mobile@2x.webp") 2x, url("../../images/map_mobile@2x.png") 2x, url("../../images/map_mobile@1x.webp") 1x, url("../../images/map_mobile@1x.png") 1x);
+  background-size: cover;
+  background-position: center;
+
+  @media (min-width: $tablet-width) {
+    background-image: image-set(url("../../images/map_tablet@2x.webp") 2x, url("../../images/map_tablet@2x.png") 2x, url("../../images/map_tablet@1x.webp") 1x, url("../../images/map_tablet@1x.png") 1x);
+  }
+
+  @media (min-width: $desktop-width) {
+    container-type: size;
+    background-image: image-set(url("../../images/map_desktop@2x.webp") 2x, url("../../images/map_desktop@2x.png") 2x, url("../../images/map_desktop@1x.webp") 1x, url("../../images/map_desktop@1x.png") 1x);
+  }
+}
+
+.cooperation__map-image {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
+
+@container (min-height: 401px) {
+  .cooperation__map-image {
+    height: 100%;
+  }
+}

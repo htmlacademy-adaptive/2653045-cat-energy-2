@@ -1,0 +1,42 @@
+/* GLOBAL */
+@import "common/variables.scss";
+@import "common/mixins.scss";
+@import "common/fonts.scss";
+@import "common/global.scss";
+@import "common/button.scss";
+@import "common/visually-hidden.scss";
+
+/* BLOCKS */
+@import "blocks/page";
+
+/* HEADER */
+@import "blocks/main-heder-conteiner.scss";
+@import "blocks/main-header";
+@import "blocks/site-nav";
+
+/* MAIN */
+@import "blocks/main";
+@import "blocks/main-page";
+@import "blocks/hero";
+@import "blocks/programs";
+@import "blocks/program-version.scss";
+@import "blocks/haw-it-works";
+@import "blocks/statistic.scss";
+@import "blocks/example";
+
+/* CATALOG */
+@import "blocks/catalog";
+@import "blocks/main-goods";
+@import "blocks/good-card";
+@import "blocks/good-cpecifications.scss";
+@import "blocks/good-other.scss";
+@import "blocks/additional-goods.scss";
+@import "blocks/additional-good-card.scss";
+@import "blocks/actions-and-news.scss";
+
+/* FOOTER */
+@import "blocks/main-footer";
+@import "blocks/cooperation.scss";
+@import "blocks/social-list.scss";
+@import "blocks/html-academi";
+

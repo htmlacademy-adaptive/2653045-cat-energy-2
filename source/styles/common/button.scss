@@ -1,0 +1,26 @@
+.button {
+  font-family: $main-header;
+  color: $header-color-invert;
+  background-color: $theme-color;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $theme-color-lighter;
+  }
+
+  &:active {
+    background-color: $theme-color-lighter;
+  }
+
+  &:active:not(:disabled) .button__text {
+    opacity: 30%;
+  }
+
+  &:disabled {
+    background-color: $background-color-fourty;
+    cursor: auto;
+  }
+}

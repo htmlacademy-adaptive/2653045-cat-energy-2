@@ -1,0 +1,45 @@
+.social-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+  justify-content: center;
+  min-height: 22px;
+  max-width: 132px;
+  margin: 0;
+  padding: 20px 0;
+  list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 9px 0 0;
+  }
+}
+
+.social-list__link {
+  &::before {
+    content: "";
+    display: block;
+    width: 28px;
+    height: 22px;
+    background-color: $background-color-fourty;
+  }
+
+  &:hover::before {
+    background-color: $theme-color;
+  }
+
+  &:active::before {
+    background-color: $background-color-fourty-active;
+  }
+
+  &--vk::before {
+    mask-image: url("../../icons/stack.svg#social_vk");
+  }
+
+  &--youtube::before {
+    mask-image: url("../../icons/stack.svg#social_youtube");
+  }
+
+  &--telegram::before {
+    mask-image: url("../../icons/stack.svg#social_telegram");
+  }
+}

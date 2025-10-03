@@ -1,0 +1,131 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 27px 20px 0;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-rows: min-content min-content min-content;
+    grid-template-columns: auto;
+    padding: 37px 29px 0 30px;
+    background: $background-color-main;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 416px auto;
+    align-items: start;
+    padding: 0 0 52px 160px;
+    background: transparent;
+  }
+}
+
+.hero__header {
+  margin: 0 0 24px;
+  min-height: 72px;
+  text-align: center;
+  font-family: $main-header;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  color: $header-color-invert;
+
+  @media (min-width: $tablet-width) {
+    width: 416px;
+    min-height: 120px;
+    margin: 0 0 41px;
+    padding-left: 90px;
+    text-align: start;
+    font-size: 60px;
+    line-height: 60px;
+    color: $header-color-main;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 81px 0 40px;
+    padding-left: 0;
+  }
+}
+
+.hero__slogan {
+  margin: 0 0 29px;
+  font-family: $main-header;
+  min-height: 14px;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  color: $header-color-invert;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / -1;
+    min-height: 20px;
+    margin: 0 0 21px;
+    padding-left: 90px;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    color: $header-color-main;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 2;
+    margin: 0 0 52px;
+    padding-left: 0;
+  }
+}
+
+.hero__picture-wrapper {
+  margin: 0 0 3px;
+
+  @media (min-width: $tablet-width) {
+    grid-row: 3 / 4;
+    grid-column: 1 / -1;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-row: 1 / -1;
+    grid-column: 2 / -1;
+    margin-left: -49px;
+  }
+}
+
+.hero__picture {
+  display: block;
+  object-fit: contain;
+  max-width: 100%;
+
+  @media (min-width: $tablet-width) {
+    min-height: 609px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 499px;
+  }
+}
+
+.hero__button {
+  align-self: stretch;
+  margin: 0;
+  padding: 10px;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    grid-row: 3 / 4;
+    grid-column: 1 / -1;
+    align-self: start;
+    margin: 29px 0 0 90px;
+    padding: 14px 26px;
+    width: 192px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 2;
+    margin: 0 0 132px;
+  }
+}
