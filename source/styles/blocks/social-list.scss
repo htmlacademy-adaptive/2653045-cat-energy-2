@@ -32,14 +32,14 @@
   }
 
   &--vk::before {
-    mask-image: url("../../icons/stack.svg#social_vk");
+    mask-image: url("../../images/icons/vkontakte.svg");
   }
 
   &--youtube::before {
-    mask-image: url("../../icons/stack.svg#social_youtube");
+    mask-image: url("../../images/icons/youtube.svg");
   }
 
   &--telegram::before {
-    mask-image: url("../../icons/stack.svg#social_telegram");
+    mask-image: url("../../images/icons/telegram.svg");
   }
 }

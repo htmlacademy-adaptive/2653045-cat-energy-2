@@ -96,28 +96,28 @@
 
   &--leaf {
     &::after {
-      background-image: url("../../icons/stack.svg#work_leaf");
+      background-image: url("../../images/icons/icon.svg");
       background-size: 30px;
     }
   }
 
   &--boil {
     &::after {
-      background-image: url("../../icons/stack.svg#work_boil");
+      background-image: url("../../images/icons/icon-2.svg");
       background-size: 26px;
     }
   }
 
   &--eat {
     &::after {
-      background-image: url("../../icons/stack.svg#work_eat");
+      background-image: url("../../images/icons/icon-3.svg");
       background-size: 25px;
     }
   }
 
   &--clock {
     &::after {
-      background-image: url("../../icons/stack.svg#work_clock");
+      background-image: url("../../images/icons/icon-4.svg");
       background-size: 26px;
     }
   }
