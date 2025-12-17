@@ -1,0 +1,23 @@
+.catalog-promo {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  padding-bottom: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-promo {
+    row-gap: 30px;
+    padding-bottom: 45px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-promo {
+    flex-flow: row wrap;
+    column-gap: 80px;
+    padding: 0;
+    padding-top: 82px;
+    margin-bottom: 71px;
+  }
+}

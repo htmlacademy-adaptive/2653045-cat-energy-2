@@ -1,0 +1,31 @@
+.catalog-main__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: #000000;
+  padding: 27px 42px 41px 20px;
+  box-sizing: border-box;
+  white-space: nowrap;
+  border-bottom: 1px solid $border-grey-2;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-main__title {
+    font-size: 60px;
+    line-height: 60px;
+    color: #000000;
+    padding: 39px 308px 84px 30px;
+    box-sizing: border-box;
+    white-space: nowrap;
+    border: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-main__title {
+    padding: 0 790px 84px 0;
+    border: none;
+    margin-top: 47px;
+  }
+}

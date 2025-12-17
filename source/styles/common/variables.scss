@@ -1,40 +1,12 @@
-/* TEXT COLORS */
-$header-color-main: #000000;
-$header-color-invert: #ffffff;
-$text-color-main: #444444;
-$text-color-secondary: #222222;
-$text-color-threety: #111111;
-$text-color-fourty: #f2f2f2;
-$text-color-fifty: #3e3e3e;
-$text-color-sixty: #6b6b6b;
-
-/* BACKGROUND COLORS */
-$background-color-main: #ffffff;
-$background-color-secondary: #f2f2f2;
-$background-color-threety: #eaeaea;
-$theme-color: #68b738;
-$theme-color-opacity: rgba(104, 183, 56, 0.85);
-$theme-color-lighter: #5eaa2f;
-$background-color-fourty: #666666;
-$background-color-fourty-active: rgba(104, 183, 56, 0.3);
-$background-color-fifty: #e6e6e6;
-$background-color-sixty: #ebebeb;
-$background-color-seventy: #d3d3d3;
-$background-color-eighty: #cdcdcd;
-$background-color-ninety: #d9d9d9;
-$background-color-tenty: #e7e7e7;
-$background-color-eleventy: #aadaff;
-$outline-color: #000000;
-$error-color: #ff8282;
-$background-color-special-one: #4d4c51;
-$background-color-special-two: #414045;
-$background-color-special-three: #63a73b;
-$background-color-special-four: #62a53a;
-$background-color-special-five: #535257;
-$background-color-special-six: #3e3f44;
-
-/* SCREEN WIDTH */
-$mobile-wide-with: 640px;
+/* здесь используйте глобальные переменные */
+$base-color-text:#444444;
+$base-color-description-text:#222222;
+$basic-green:#68b738;
+$basic-green-2:#5eaa2f;
 $tablet-width: 768px;
-$tablet-wide-width: 930px;
-$desktop-width: 1440px;
+$desktop-width: 1280px;
+$basic-grey:#f2f2f2;
+$mobile-width-only: 767px;
+$special-grey:#cdcdcd;
+$border-grey-2:#ebebeb;
+$grey:#d3d3d3;

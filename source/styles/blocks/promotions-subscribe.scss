@@ -1,0 +1,168 @@
+.promotions-subscribe__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  padding-bottom: 32px;
+}
+
+@media (min-width: $tablet-width) {
+  .promotions-subscribe__title {
+    margin-left: 41px;
+    padding-bottom: 66px;
+    font-size: 32px;
+    line-height: 32px;
+    box-shadow: -40px 0 #ffffff, 40px 0 #ffffff;
+    width: fit-content;
+    background-color: #ffffff;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promotions-subscribe__title {
+    font-size: 40px;
+    line-height: 40px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 66px;
+  }
+}
+
+.promotions-subscribe__title::before {
+  content: "";
+  z-index: -1;
+  background-color: #ffffff;
+  width: 100vw;
+  height: 2px;
+  position: absolute;
+  bottom: 44px;
+  right: 89px;
+  box-shadow: 100vw 0 $basic-green;
+}
+
+@media (min-width: $tablet-width) {
+  .promotions-subscribe__title::before {
+    content: "";
+    z-index: -1;
+    background-color: #68b738;
+    width: 100vw;
+    height: 2px;
+    position: absolute;
+    bottom: 82px;
+    right: -28px;
+    box-shadow: 100vw 0 $basic-green;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promotions-subscribe__title::before {
+    bottom: 25px;
+  }
+}
+
+.promotions-subscribe__text {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  padding-bottom: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .promotions-subscribe__text {
+    font-size: 24px;
+    line-height: 32px;
+    margin-left: 68px;
+    margin-right: 68px;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .promotions-subscribe__form-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin-left: 37px;
+    margin-right: 68px;
+    margin-bottom: 39px;
+  }
+}
+
+.promotions-subscribe__form {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 16px;
+}
+
+@media (min-width: $desktop-width) {
+  .promotions-subscribe__form {
+    padding-left: 198px;
+    margin-bottom: 67px;
+  }
+}
+
+.promotions-subscribe__input {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  color: $base-color-text;
+  text-transform: uppercase;
+  border: 1px solid #e7e7e7;
+  width: 100%;
+  height: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+@media (min-width: $tablet-width) {
+  .promotions-subscribe__input {
+    width: 376px;
+    height: 56px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promotions-subscribe__input {
+    width: 496px;
+    height: 56px;
+  }
+}
+
+.subscribe-button {
+  text-transform: uppercase;
+  color: #ffffff;
+  box-sizing: border-box;
+  background-color: $basic-green;
+  border: none;
+  width: 280px;
+  height: 56px;
+  padding: 15px 81px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  text-decoration: none;
+  margin-bottom: 40px;
+}
+
+@media (min-width: $tablet-width) {
+  .subscribe-button {
+    width: 256px;
+    padding: 15px 70px;
+  }
+}
+
+.subscribe-button:hover {
+  background-color: $basic-green-2;
+}
+
+.subscribe-button:active {
+  background-color: $basic-green-2;
+  color: rgba(255, 255, 255, 0.3);
+}

@@ -1,0 +1,44 @@
+.order-button {
+  background-color: $basic-green;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #ffffff;
+  grid-area: 3 / 1 / 4 / 3;
+  width: 280px;
+  height: 40px;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  padding: 10px 109px;
+}
+
+@media (min-width: $tablet-width) {
+  .order-button {
+    width: 250px;
+    height: 40px;
+    grid-area: 4 / 1 / 5 / 2;
+    padding: 10px 93px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order-button {
+    width: 169px;
+    height: 40px;
+    margin-inline: auto;
+    padding: 10px 53px;
+  }
+}
+
+.order-button:hover {
+  background-color: $basic-green-2;
+}
+
+.order-button:active {
+  background-color: $basic-green-2;
+  color: rgba(255, 255, 255, 0.3);
+}
