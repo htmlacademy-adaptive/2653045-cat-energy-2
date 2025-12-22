@@ -1,0 +1,21 @@
+.main-case-background {
+  background-color: #eaeaea;
+  padding-bottom: 40px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-case-background {
+    background: linear-gradient(0deg, #f2f2f2 0 462px, transparent 462px 100%);
+    background-color: #ffffff;
+    padding-top: 5px;
+    padding-bottom: 101px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-case-background {
+    background: linear-gradient(0deg, #f2f2f2 0 462px, transparent 462px 100%);
+    background-color: #ffffff;
+    padding-bottom: 80px;
+  }
+}

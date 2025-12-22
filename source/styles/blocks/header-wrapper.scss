@@ -1,0 +1,126 @@
+.header-wrapper {
+  display: flex;
+  flex-direction: row;
+  height: 65px;
+}
+
+.header-wrapper__logo:hover {
+  opacity: 60%;
+}
+
+.header-wrapper__logo:active {
+  opacity: 40%;
+}
+
+.header-wrapper__toglewrap {
+  display: block;
+  padding: 20px 21px 21px 0;
+}
+
+.header-wrapper__toglewrap--nojs {
+  display: none;
+}
+
+.header-wrapper__toggle {
+  background-color: #ffffff;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  position: relative;
+  border: none;
+}
+
+@media (min-width: $tablet-width) {
+  .header-wrapper__toglewrap {
+    display: none;
+  }
+}
+
+.header-wrapper--closed .header-wrapper__toggle::before {
+  content: "";
+  background-color: #000000;
+  width: 24px;
+  height: 2px;
+  position: absolute;
+  top: 2px;
+  left: 0;
+  box-shadow: 0 8px #000000, 0 16px #000000;
+}
+
+.main-header--opened .header-wrapper__toggle {
+  &::before,
+  &::after {
+    content: "";
+    background-color: #000000;
+    width: 24px;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    z-index: 2;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .header-wrapper--closed .main-nav {
+    display: none;
+  }
+}
+
+.header-wrapper__cat-logo {
+  display: block;
+  padding: 13px 56px 14px 0;
+  box-sizing: border-box;
+}
+
+@media (min-width: $tablet-width) {
+  .header-wrapper__cat-logo {
+    display: block;
+    padding: 25px 13px 0 0;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header-wrapper__cat-logo {
+    display: block;
+    padding: 55px 0 0;
+    box-sizing: border-box;
+  }
+}
+
+.header-wrapper__letters {
+  display: block;
+  padding: 20px 65px 24px 0;
+  box-sizing: border-box;
+  margin-top: 3px;
+}
+
+@media (min-width: $tablet-width) {
+  .header-wrapper__letters {
+    display: block;
+    padding: 38px 94px 0 0;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header-wrapper__letters {
+    display: block;
+    padding: 70px 12px 0;
+    box-sizing: border-box;
+  }
+}

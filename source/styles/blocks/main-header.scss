@@ -1,0 +1,33 @@
+.main-header {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .main-header {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 38px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header {
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+    height: 142px;
+    position: relative;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header--index {
+    background: linear-gradient(90deg, #ffffff 50%, rgba(104, 183, 56, 0.85) 50%);
+  }
+
+  .main-header--index .main-nav__link {
+    color: #ffffff;
+  }
+}

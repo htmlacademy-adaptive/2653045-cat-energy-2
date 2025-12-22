@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Kostiantyn Drozd](https://up.htmlacademy.ru/adaptive-individual/2/user/2653045).
-* Наставник: `Неизвестно`.
+* Наставник: [Грачев Андрей](https://htmlacademy.ru/profile/angra).
 
 ---
 

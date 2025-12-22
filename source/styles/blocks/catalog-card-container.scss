@@ -1,0 +1,26 @@
+.catalog-card-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  border-bottom: 1px solid $border-grey-2;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 60px;
+    padding: 0 30px 74px;
+    border: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 63px 80px;
+    padding: 0;
+    margin-bottom: 69px;
+  }
+}

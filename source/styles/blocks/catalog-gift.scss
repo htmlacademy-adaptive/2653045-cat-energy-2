@@ -1,0 +1,73 @@
+.catalog-gift {
+  background-image:
+    linear-gradient(rgba(104, 183, 56, 0.85)),
+    image-set(url("../../images/cat-bag-gift@1x.jpg") 1x, url("../../images/cat-bag-gift@2x.jpg") 2x);
+  position: relative;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: 290px;
+  margin: 0 0 40px;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-gift {
+    background-position: 50% 60%;
+    margin-bottom: 43px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-gift {
+    width: fit-content;
+    margin: 0;
+  }
+}
+
+.catalog-gift::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 58px;
+  left: 101px;
+  width: 78px;
+  height: 80px;
+  background-image: url("../../icons/stack.svg#icon-gift");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-gift::before {
+    top: 57px;
+    left: 79px;
+  }
+}
+
+.catalog-gift__text {
+  font-family: "Lato", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  margin: 0;
+  padding: 187px 64px 43px 57px;
+  text-align: center;
+  min-width: 161px;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-gift__text {
+    padding: 70px 120px 69px 422px;
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-gift__text {
+    max-width: 161px;
+    padding: 185px 42px 43px;
+    text-align: center;
+  }
+}

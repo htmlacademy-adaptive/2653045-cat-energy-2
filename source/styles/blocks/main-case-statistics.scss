@@ -1,0 +1,130 @@
+.main-case-statistics {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .main-case-statistics {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 99px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-case-statistics {
+    grid-area: 3 / 1 / 4 / 2;
+    margin: 0;
+    flex-flow: column wrap;
+    gap: 50px;
+  }
+}
+
+.main-case-statistics__list {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 21px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-case-statistics__list {
+    display: flex;
+    gap: 43px;
+    margin: 0;
+    list-style: none;
+    width: fit-content;
+    flex-grow: 1;
+    padding: 0;
+  }
+}
+
+.main-case-statistics__border {
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+}
+
+.main-case-statistics__item {
+  display: flex;
+  flex-direction: column;
+  width: 162px;
+}
+
+.main-case-statistics__stats {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 0;
+  padding: 12px 0 16px;
+  text-align: center;
+  white-space: nowrap;
+  width: 124px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-case-statistics__stats {
+    margin: 0;
+    padding: 15px 0 8px;
+    text-align: center;
+    white-space: nowrap;
+    width: 124px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-case-statistics__stats {
+    width: fit-content;
+    padding: 0;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    font-size: 30px;
+    line-height: 37px;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.main-case-statistics__description {
+  font-family: "Lato", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  color: #444444;
+  background-color: #eaeaea;
+  padding: 0;
+  margin: -10px auto 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 3px;
+  text-align: center;
+  max-width: 77px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-case-statistics__description {
+    font-size: 14px;
+    line-height: 14px;
+    margin: -10px auto 0;
+    background-color: #ffffff;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 3px;
+    max-width: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-case-statistics__description {
+    background-color: $basic-grey;
+  }
+}
